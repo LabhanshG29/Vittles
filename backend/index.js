@@ -28,7 +28,8 @@ app.use((req, res, next) => {
 });
 
 app.use("/api", dishes);
-app.use("/api/user", userRoutes);
+// app.use("/api/user", userRoutes);
+app.use("/api", userRoutes);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
