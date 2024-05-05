@@ -1,0 +1,16 @@
+{
+    "vercel": 2,
+    "name": "Food-delivery",
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "desc": "/index.js"
+        }
+    ]
+}
